@@ -1,0 +1,36 @@
+verde = #8BC34A
+verde_oscuro = #689F38
+blanco = #DCEDC8
+otro = #F9F9F9
+negro = #212121
+negro_claro = #727272
+gris = #c9c9c9
+//gris = #B6B6B6
+rosa = #FF4081
+
+azul_link = #2095F2
+
+@import 'nib'
+@import 'normalize.styl'
+@import 'icon-transform.styl'
+@import 'fonts.styl'
+
+
+body
+  background #fafafa
+  font-family 'Roboto', sans-serif
+  color negro
+  
+.wrap
+  max-width 1200px
+  margin 0 auto
+
+@import './header/style.styl'
+@import './category/style.styl'
+@import './articles/style.styl'
+
+/* Media tablet */            
+@media screen and (min-width: 776px) 
+  @import './header/tablet.styl'
+  @import './category/tablet.styl'
+  

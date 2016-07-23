@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Blogcard</title>
+  <!--link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet"-->
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="Header"> 
+    
+    <div class="Header-container wrap">
+
+      <nav class="Header-menu">
+        <ul class="list">
+          <div class="action">Navigation</div>
+          <li class="item">
+            <a href="#" class="link">
+              <span class="icon">#</span>
+              <span class="text">Home</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="link">
+              <span class="icon">$</span>
+              <span class="text">Profile</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="list">
+          <div class="action">Share</div>
+          <li class="item">
+            <a href="#" class="link">
+              <span class="icon">$</span>
+              <span class="text">Facebook</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="link">
+              <span class="icon">$</span>
+              <span class="text">Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      
+      <div class="Header-left">
+        <h1 class="title">Blogcard</h1>
+        <span class="btn-menu">
+          <button type="button" class=" tcon tcon-menu--arrow tcon-menu--arrow360left" aria-label="toggle menu">
+            <span class="tcon-menu__lines" aria-hidden="true"></span>
+            <span class="tcon-visuallyhidden">toggle menu</span>
+          </button>
+        </span>
+
+        <form class="search-desktop">
+          <div class="field">
+            <button class="btn-search">q</button>
+            <input type="text" class="input" placeholder="Search article here...">
+          </div>
+        </form>
+      
+        <span class="btn-mobile-search">
+          <button type="button" class="tcon tcon-search--xcross" aria-label="toggle search">
+            <span class="tcon-search__item" aria-hidden="true"></span>
+            <span class="tcon-visuallyhidden">toggle search</span>
+          </button>
+        </span>
+      </div>
+
+      <div class="Header-right">
+        
+        <button class="btn-create">
+          <span class="icon-add2"></span>
+          <span class="text">Create Article</span>
+        </button>
+
+        <div class="profile">
+          <figure class="avatar">
+            <img src="assets/images/user.png" width="50" height="50" alt="user">
+          </figure>
+
+          <div class="dropdown">
+            <ul class="list">
+              <li class="item">
+                <a href="#" class="link">Create Article</a>
+              </li>
+              <li class="item">
+                <a href="#" class="link">Your Profile</a>
+              </li>
+              <li class="item">
+                <a href="#" class="link">Logout</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+
+  </header>
+
+
+  <main class="Main wrap" id="main">
+    <ul class="Category wrap">
+        <li class="item">
+          <button class="btn-category active">
+            <span class="icon">$</span>
+            <span class="text">Featured Article</span>
+          </button>
+        </li>
+        <li class="item">
+          <button class="btn-category">
+            <span class="icon">#</span>
+            <span class="text">Collections</span>
+          </button>
+        </li>
+        <li class="item">
+          <button class="btn-category">
+            <span class="icon">&</span>
+            <span class="text">Most Recommennded</span>
+          </button>
+        </li>
+      </ul>
+
+      <section class="Content" id="container">
+
+        <article class="Content-article">
+          <header class="header">
+            <img src="assets/images/post.jpeg" alt="">
+            <h3 class="title">
+              <a href="#">Daily Life of Freelancer, Programmer, and Writer</a>
+            </h3>
+            <time class="date">1 August 2015</time>
+          </header>
+
+          <div class="card">
+            <h3 class="title">
+              <a href="#">Daily Life of Freelancer, Programmer, and Writer</a>
+            </h3>
+            <time class="date">1 August 2015</time>
+            <div class="stract">
+              It's no surprise when the headlines are dominated by Uber --as the fastest-growing,
+              most voracious compney in the world of instant every, it just won't stop elbowing its way into the conversation. but since we..
+            </div>
+          </div>
+
+          <div class="bottom">
+            <button class="like liked">
+              <span class="icon-up"></span>
+              <span class="likes">217</span>
+            </button>
+            <figure class="profile">
+              <img src="assets/images/user.png" width="50" height="50" alt="user">
+            </figure>
+            <div class="data">
+              <a href="#" class="author">Samantha William</a>
+              <span class="tag">on Technology</span>
+            </div>
+          </div>
+
+        </article>
+
+        <article class="Content-article">
+          <header class="header">
+            <img src="assets/images/post-2.jpeg" alt="">
+            <h3 class="title">
+              <a href="#">Daily Life of Freelancer, Programmer, and Writer</a>
+            </h3>
+            <time class="date">1 August 2015</time>
+          </header>
+
+          <div class="card">
+            <h3 class="title">
+              <a href="#">Daily Life of Freelancer, Programmer, and Writer</a>
+            </h3>
+            <time class="date">1 August 2015</time>
+            <div class="stract">
+              It's no surprise when the headlines are dominated by Uber --as the fastest-growing,
+              most voracious compney in the world of instant every, it just won't stop elbowing its way into the conversation. but since we..
+            </div>
+          </div>
+
+          <div class="bottom">
+            <button class="like">
+              <span class="icon-up"></span>
+              <span class="likes">217</span>
+            </button>
+            <figure class="profile">
+              <img src="assets/images/user.png" width="50" height="50" alt="user">
+            </figure>
+            <div class="data">
+              <a href="#" class="author">Samantha William</a>
+              <span class="tag">on Technology</span>
+            </div>
+          </div>
+
+        </article>
+
+        <article class="Content-article">
+          <header class="header">
+            <img src="assets/images/post.jpeg" alt="">
+            <h3 class="title">
+              <a href="#">Daily Life of Freelancer, Programmer, and Writer</a>
+            </h3>
+            <time class="date">1 August 2015</time>
+          </header>
+
+          <div class="card">
+            <h3 class="title">
+              <a href="#">Daily Life of Freelancer, Programmer, and Writer</a>
+            </h3>
+            <time class="date">1 August 2015</time>
+            <div class="stract">
+              It's no surprise when the headlines are dominated by Uber --as the fastest-growing,
+              most voracious compney in the world of instant every, it just won't stop elbowing its way into the conversation. but since we..
+            </div>
+          </div>
+
+          <div class="bottom">
+            <button class="like">
+              <span class="icon-up"></span>
+              <span class="likes">217</span>
+            </button>
+            <figure class="profile">
+              <img src="assets/images/user.png" width="50" height="50" alt="user">
+            </figure>
+            <div class="data">
+              <a href="#" class="author">Samantha William</a>
+              <span class="tag">on Technology</span>
+            </div>
+          </div>
+
+        </article>
+
+        <article class="Content-article">
+          <header class="header">
+            <img src="assets/images/post-2.jpeg" alt="">
+            <h3 class="title">
+              <a href="#">Daily Life of Freelancer, Programmer, and Writer</a>
+            </h3>
+            <time class="date">1 August 2015</time>
+          </header>
+
+          <div class="card">
+            <h3 class="title">
+              <a href="#">Daily Life of Freelancer, Programmer, and Writer</a>
+            </h3>
+            <time class="date">1 August 2015</time>
+            <div class="stract">
+              It's no surprise when the headlines are dominated by Uber --as the fastest-growing,
+              most voracious compney in the world of instant every, it just won't stop elbowing its way into the conversation. but since we..
+            </div>
+          </div>
+
+          <div class="bottom">
+            <button class="like">
+              <span class="icon-up"></span>
+              <span class="likes">217</span>
+            </button>
+            <figure class="profile">
+              <img src="assets/images/user.png" width="50" height="50" alt="user">
+            </figure>
+            <div class="data">
+              <a href="#" class="author">Samantha William</a>
+              <span class="tag">on Technology</span>
+            </div>
+          </div>
+
+        </article>
+      </section>
+    
+  </main>
+
+  <script src="assets/transformicons/transform.js"></script>
+  <script>transformicons.add('.tcon')</script>
+</body>
+</html>

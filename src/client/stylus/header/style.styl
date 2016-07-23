@@ -1,0 +1,135 @@
+.Header
+  border-bottom 1px rgba(gris, 0.5) solid
+  background white
+  display flex
+  height 100px
+  &-container
+    position relative
+    width 100%
+    display flex
+    justify-content space-between
+    
+  &-menu
+    display none
+    border-radius .3rem
+    position absolute
+    z-index 2
+    flex-direction column
+    top 80px
+    left 20px
+    width 200px
+    background #fafafa
+    box-shadow 2px 5px 10px 5px rgba(0,0,0, .1)
+    .action
+      color gris
+      padding .3rem
+    .list
+      margin 0
+      padding 0
+      list-style none
+      .link
+        display block
+        padding .5rem
+        text-decoration none
+        color azul_link
+    
+  
+  &-left
+    display flex
+    align-items center
+    
+    .title
+      font-weight 300
+      color verde
+      margin-right .5rem
+      
+    .btn-mobile-search
+      display none
+      
+    .btn-menu
+      button
+        width 2.3rem
+        span
+        span:before
+        span:after
+          background gris
+          
+    .search-desktop
+      margin-left 1rem
+      position relative
+      display none
+      width 250px
+      .field
+        display flex
+        border red solid 1px
+        border 1px gris solid
+        border-radius 1rem
+        padding .3rem
+        .input
+          width 100%
+          border none
+          outline none
+        .btn-search
+          color gris
+          border none
+          outline none
+          background none
+      &:before
+        content ''
+        top -.4rem
+        left -.6rem 
+        position absolute
+        width 1px
+        height 3rem
+        background rgba(gris, .4)
+      
+      
+        
+  &-right
+    display flex
+    align-items center
+    justify-content space-between
+    
+    .btn-create
+      display none
+      background verde
+      border none
+      color white
+      padding .6rem 1rem
+      border-radius 1.5rem
+      white-space nowrap
+      .icon-add2
+        position relative
+        bottom -1px
+        margin-right .3rem
+      .text
+        overflow hidden
+        text-overflow ellipsis
+        
+    .profile
+      .avatar
+        cursor pointer
+        margin 0
+        padding-right .5rem
+        img
+          border-radius 50%
+          width 40px
+          height 40px
+      .dropdown
+        display none
+        position absolute
+        right 20px
+        width 150px
+        background #fafafa
+        box-shadow 2px 5px 10px rgba(0,0,0, 0.1)
+        .list
+          margin 0
+          padding 0
+          list-style none
+          .link
+            display block
+            padding .5rem
+            text-decoration none
+            color azul_link
+    
+    

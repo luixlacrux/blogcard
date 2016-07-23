@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="icon-transform.css">
+</head>
+<body>
+
+  
+  <button type="button" class="tcon tcon-menu--arrow tcon-menu--arrow360left" aria-label="toggle menu">
+    <span class="tcon-menu__lines" aria-hidden="true"></span>
+    <span class="tcon-visuallyhidden">toggle menu</span>
+  </button>
+
+  <button type="button" class="tcon tcon-plus tcon-plus--check" aria-label="add item">
+    <span class="tcon-visuallyhidden">add item</span>
+  </button>
+
+  <span class="tcon-indicator" aria-label="scroll" aria-hidden="true">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="tcon-svgchevron" viewBox="0 0 30 36">
+      <path class="a3" d="M0,0l15,16L30,0"></path>
+      <path class="a2" d="M0,10l15,16l15-16"></path>
+      <path class="a1" d="M0,20l15,16l15-16"></path>
+    </svg>
+  </span>
+
+  <button type="button" class="tcon tcon-search--xcross" aria-label="toggle search">
+    <span class="tcon-search__item" aria-hidden="true"></span>
+    <span class="tcon-visuallyhidden">toggle search</span>
+  </button>
+  
+  <span class="tcon-loader--spinner360" aria-label="loading">
+    <span class="tcon-visuallyhidden">loading</span>
+  </span>
+
+  <script src="transform.js"></script>
+  <script>transformicons.add('.tcon')</script>
+</body>
+</html>
