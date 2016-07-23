@@ -9,6 +9,29 @@ const socket = socketio(server)
 
 const PORT = process.env.PORT || 3000
 
+app.use(express.static('public'))
+
+app.get('/api/articles', (req,res) => {
+  res.json(articles)
+})
+
+socket.on('connection' , socket => {
+  console.log('User connect', socket.id)
+
+  setTimeout(() => {
+    socket.emit('articles', articles)
+  }, 2000)
+    
+  setTimeout(() => {
+    socket.emit('article', moreArticles[0])
+  }, 15000)
+})
+
+server.listen(PORT, () => {
+  console.log('Server listen in:', PORT)
+})
+
+
 const moreArticles = [
   {
     "id":10,
@@ -89,30 +112,3 @@ const articles = [
     liked: true
   }
 ]
-
-app.use(express.static('public'))
-
-app.get('/api/articles', (req,res) => {
-  articles[3] = moreArticles[0]
-  res.json(articles)
-})
-
-socket.on('connection' , socket => {
-  console.log('User connect', socket.id)
-
-  socket.emit('articles', articles)
-  setTimeout(() => {
-    emitter()
-  }, 10000)
-
-  function emitter () {
-    console.log('emiti')
-    socket.emit('article', moreArticles[0])
-  }
-})
-
-
-
-server.listen(PORT, () => {
-  console.log('Server listen in:', PORT)
-})

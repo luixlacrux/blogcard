@@ -4,5 +4,5 @@ import Blog from './components/blog'
 
 ReactDOM.render(
   <Blog />,
-  document.getElementById('main')
+  document.getElementById('article-container')
 );

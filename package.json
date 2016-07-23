@@ -4,36 +4,37 @@
   "description": "Design front-end  to Blogcard",
   "main": "index.js",
   "dependencies": {
-    "babel-preset-es2015": "^6.9.0",
-    "babel-preset-react": "^6.11.1",
-    "babelify": "^7.3.0",
-    "browserify": "^13.0.1",
     "nib": "^1.1.0",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
     "socket.io": "^1.4.8",
     "socket.io-client": "^1.4.8",
     "stylus": "^0.54.5",
-    "superagent": "^2.1.0",
-    "watchify": "^3.7.0"
+    "superagent": "^2.1.0"
   },
   "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
     "gulp": "^3.9.1",
     "gulp-concat-css": "^2.3.0",
     "gulp-data": "^1.2.1",
     "gulp-livereload": "^3.8.1",
     "gulp-minify-css": "^1.2.4",
+    "gulp-react": "^3.1.0",
     "gulp-stylus": "^2.5.0",
     "gulp-uglify": "^1.5.4",
     "gulp-watch": "^4.3.8",
+    "lodash.assign": "^4.0.9",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
   },
   "scripts": {
-    "server": "http-server public",
-    "dev": "gulp watch",
     "start": "gulp && npm run server",
-    "build": "browserify -t babelify src/client/js/app.js > public/app.js"
+    "server": "node server.js",
+    "dev": "gulp watch",
   },
   "repository": {
     "type": "git",

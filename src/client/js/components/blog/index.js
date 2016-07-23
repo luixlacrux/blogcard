@@ -19,7 +19,7 @@ export default class Blog extends React.Component {
         articles.forEach(this.newArticle, this)
       })
     */
-    this.socket = socket.connect('http://10.0.0.43:3000')
+    this.socket = socket.connect('http://localhost:3000')
     this.socket.on('article',  article => this.newArticle(article))
     this.socket.on('articles', articles => {
       articles.forEach(this.newArticle, this)

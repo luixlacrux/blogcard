@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Blogcard</title>
-  <!--link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet"-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="app.css">
 </head>
 <body>
@@ -58,7 +58,7 @@
 
         <form class="search-desktop">
           <div class="field">
-            <button class="btn-search">q</button>
+            <button class="btn-search">x</button>
             <input type="text" class="input" placeholder="Search article here...">
           </div>
         </form>
@@ -104,7 +104,6 @@
 
   </header>
 
-
   <main class="Main wrap" id="main">
     <ul class="Category wrap">
         <li class="item">
@@ -127,156 +126,12 @@
         </li>
       </ul>
 
-      <section class="Content" id="container">
-
-        <article class="Content-article">
-          <header class="header">
-            <img src="assets/images/post.jpeg" alt="">
-            <h3 class="title">
-              <a href="#">Daily Life of Freelancer, Programmer, and Writer</a>
-            </h3>
-            <time class="date">1 August 2015</time>
-          </header>
-
-          <div class="card">
-            <h3 class="title">
-              <a href="#">Daily Life of Freelancer, Programmer, and Writer</a>
-            </h3>
-            <time class="date">1 August 2015</time>
-            <div class="stract">
-              It's no surprise when the headlines are dominated by Uber --as the fastest-growing,
-              most voracious compney in the world of instant every, it just won't stop elbowing its way into the conversation. but since we..
-            </div>
-          </div>
-
-          <div class="bottom">
-            <button class="like liked">
-              <span class="icon-up"></span>
-              <span class="likes">217</span>
-            </button>
-            <figure class="profile">
-              <img src="assets/images/user.png" width="50" height="50" alt="user">
-            </figure>
-            <div class="data">
-              <a href="#" class="author">Samantha William</a>
-              <span class="tag">on Technology</span>
-            </div>
-          </div>
-
-        </article>
-
-        <article class="Content-article">
-          <header class="header">
-            <img src="assets/images/post-2.jpeg" alt="">
-            <h3 class="title">
-              <a href="#">Daily Life of Freelancer, Programmer, and Writer</a>
-            </h3>
-            <time class="date">1 August 2015</time>
-          </header>
-
-          <div class="card">
-            <h3 class="title">
-              <a href="#">Daily Life of Freelancer, Programmer, and Writer</a>
-            </h3>
-            <time class="date">1 August 2015</time>
-            <div class="stract">
-              It's no surprise when the headlines are dominated by Uber --as the fastest-growing,
-              most voracious compney in the world of instant every, it just won't stop elbowing its way into the conversation. but since we..
-            </div>
-          </div>
-
-          <div class="bottom">
-            <button class="like">
-              <span class="icon-up"></span>
-              <span class="likes">217</span>
-            </button>
-            <figure class="profile">
-              <img src="assets/images/user.png" width="50" height="50" alt="user">
-            </figure>
-            <div class="data">
-              <a href="#" class="author">Samantha William</a>
-              <span class="tag">on Technology</span>
-            </div>
-          </div>
-
-        </article>
-
-        <article class="Content-article">
-          <header class="header">
-            <img src="assets/images/post.jpeg" alt="">
-            <h3 class="title">
-              <a href="#">Daily Life of Freelancer, Programmer, and Writer</a>
-            </h3>
-            <time class="date">1 August 2015</time>
-          </header>
-
-          <div class="card">
-            <h3 class="title">
-              <a href="#">Daily Life of Freelancer, Programmer, and Writer</a>
-            </h3>
-            <time class="date">1 August 2015</time>
-            <div class="stract">
-              It's no surprise when the headlines are dominated by Uber --as the fastest-growing,
-              most voracious compney in the world of instant every, it just won't stop elbowing its way into the conversation. but since we..
-            </div>
-          </div>
-
-          <div class="bottom">
-            <button class="like">
-              <span class="icon-up"></span>
-              <span class="likes">217</span>
-            </button>
-            <figure class="profile">
-              <img src="assets/images/user.png" width="50" height="50" alt="user">
-            </figure>
-            <div class="data">
-              <a href="#" class="author">Samantha William</a>
-              <span class="tag">on Technology</span>
-            </div>
-          </div>
-
-        </article>
-
-        <article class="Content-article">
-          <header class="header">
-            <img src="assets/images/post-2.jpeg" alt="">
-            <h3 class="title">
-              <a href="#">Daily Life of Freelancer, Programmer, and Writer</a>
-            </h3>
-            <time class="date">1 August 2015</time>
-          </header>
-
-          <div class="card">
-            <h3 class="title">
-              <a href="#">Daily Life of Freelancer, Programmer, and Writer</a>
-            </h3>
-            <time class="date">1 August 2015</time>
-            <div class="stract">
-              It's no surprise when the headlines are dominated by Uber --as the fastest-growing,
-              most voracious compney in the world of instant every, it just won't stop elbowing its way into the conversation. but since we..
-            </div>
-          </div>
-
-          <div class="bottom">
-            <button class="like">
-              <span class="icon-up"></span>
-              <span class="likes">217</span>
-            </button>
-            <figure class="profile">
-              <img src="assets/images/user.png" width="50" height="50" alt="user">
-            </figure>
-            <div class="data">
-              <a href="#" class="author">Samantha William</a>
-              <span class="tag">on Technology</span>
-            </div>
-          </div>
-
-        </article>
-      </section>
+      <section id="article-container"></section>
     
   </main>
 
   <script src="assets/transformicons/transform.js"></script>
   <script>transformicons.add('.tcon')</script>
+  <script src="app.js"></script>
 </body>
 </html>
