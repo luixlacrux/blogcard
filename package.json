@@ -34,7 +34,7 @@
   "scripts": {
     "start": "gulp && npm run server",
     "server": "node server.js",
-    "dev": "gulp watch",
+    "dev": "gulp watch"
   },
   "repository": {
     "type": "git",
